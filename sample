@@ -1,0 +1,15 @@
+python3 mail.py \
+--verbose \
+--html \
+--timeout 1 \
+--test-mail test@mail.com \
+--test-mail-every 30 \
+--to-adresses mails.txt \
+--from-name NAME \
+--fromaddr admin@smtp.com \
+--smtp-server smtp.com \
+--smtp-port 25 \
+--username admin@smtpmail.com \
+--password admin123 \
+--subject SUBJECT \
+--content content.txt \
