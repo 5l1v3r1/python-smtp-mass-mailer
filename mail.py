@@ -41,8 +41,8 @@ def send_mails(verbose,html,timeout,test_mail,test_mail_every,fromaddr,to_adress
 	  "%s"
 	  ])
 	
-	#server = smtplib.SMTP('%s:%s'%(smtp_server,smtp_port))
-	server=""
+	server = smtplib.SMTP('%s:%s'%(smtp_server,smtp_port))
+	
 	try:
 		if verbose:
 			print("Login") 
@@ -98,10 +98,7 @@ def send_mails(verbose,html,timeout,test_mail,test_mail_every,fromaddr,to_adress
 
 
 
-			print(new_subject)
-			print(new_message_content)
-
-			exit(0)
+			
 
 
 			if verbose:
@@ -127,7 +124,8 @@ def send_mails(verbose,html,timeout,test_mail,test_mail_every,fromaddr,to_adress
 			print(e)
 			server.quit()
 			with open("not_sent.txt","a+") as not_sent:
-				not_sent.write("\n".join(toaddrs)+"\n")
+				not_sent_content=[ ";".join(one) for one in toaddrs ]
+				not_sent.write("\n".join(not_sent_content)+"\n")
 				not_sent.close()
 			exit(2)
 	
@@ -366,5 +364,6 @@ def help():
 	print("##################################################################################")
 
 
-main()
+if __name__ == '__main__':
+	main()
 #send_mails(verbose, html, timeout, test_mail, test_mail_every, fromaddr, to_adresses, message_content, from_name, smtp_server, smtp_port, username, password, subject)
