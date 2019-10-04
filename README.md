@@ -37,11 +37,11 @@ You can integrate the function that send mails by calling the cli or by importin
 
 ### send_mails function
 
-####signature 
+#### signature 
 
 	send_mails(verbose,html,timeout,test_mail,test_mail_every,fromaddr,to_adresses,message_content,from_name,smtp_server,smtp_port,username,password,subject,substitute)
 
-####args
+#### args
 
 	verbose | type : Boolean 
 	html | type : Boolean 
