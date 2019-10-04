@@ -1,4 +1,4 @@
-#PYTHON SMTP MASS MAILER BY S-MAN
+# PYTHON SMTP MASS MAILER BY S-MAN
 ## CLI Arguments 
                                                                         
 ### OPTIONAL 
