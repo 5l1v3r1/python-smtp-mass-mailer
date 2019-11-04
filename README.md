@@ -9,7 +9,7 @@
     					 	+ [[[random-hash]]] 	: prints random hash
     					 	+ [[[random-number]]]   : prints random number
     					 	+ [[[random-letter]]]   : prints random letter
-    					 	+ [[[date-time]]] 		: prints date and time in DD/MM/YYYY HH:MM format
+    					 	+ [[[date-time]]] 	: prints date and time in DD/MM/YYYY HH:MM format
     					 	+ [[[N]]]               : N must be an int , will be replaced by the column number N in the mails file [[[0]]] is for reciver mail                                     
 	--verbose		: output logs in the console                           		
 	--html 			: mails will be sent as html                                      
