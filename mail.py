@@ -46,9 +46,9 @@ def send_mails(verbose,html,timeout,test_mail,test_mail_every,fromaddr,to_adress
 	try:
 		if verbose:
 			print("Login") 
-		#server.ehlo()
-		#server.starttls()
-		#server.login(username,password)
+		server.ehlo()
+		server.starttls()
+		server.login(username,password)
 	except:
 		if verbose:
 			print("Verify smtp credentials")
